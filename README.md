@@ -1,4 +1,4 @@
-![EVE-NG & PNETLAB Banner](./images/banner.png)
+![EVE-NG & PNETLAB Banner](01-Installation/images/EVE-NG.png)
 
 # 🌐 EVE-NG & PNETLAB - Hướng Dẫn Toàn Diện
 
@@ -13,15 +13,15 @@ Repository này cung cấp hướng dẫn chi tiết về cài đặt, cấu hì
 
 ## 📚 Mục Lục
 
-- [Giới Thiệu](#giới-thiệu)
-- [Hướng Dẫn Chi Tiết](#hướng-dẫn-chi-tiết)
-- [Yêu Cầu Hệ Thống](#yêu-cầu-hệ-thống)
-- [Cấu Trúc Repository](#cấu-trúc-repository)
-- [Quick Start](#quick-start)
-- [Features](#features)
-- [Đóng Góp](#đóng-góp)
-- [License](#license)
-- [Liên Hệ](#liên-hệ)
+- [Giới Thiệu](#-giới-thiệu)
+- [Hướng Dẫn Chi Tiết](#-hướng-dẫn-chi-tiết)
+- [Yêu Cầu Hệ Thống](#-yêu-cầu-hệ-thống)
+- [Cấu Trúc Repository](#-cấu-trúc-repository)
+- [Quick Start](#-quick-start)
+- [Features](#-features)
+- [Đóng Góp](#-đóng-góp)
+- [License](#-license)
+- [Liên Hệ](#-liên-hệ--hỗ-trợ)
 
 ---
 
