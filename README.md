@@ -53,20 +53,7 @@ Hướng dẫn từng bước cài đặt EVE-NG từ đầu:
 
 ---
 
-### 2. 💾 [Hướng Dẫn Import Máy Ảo EVE Có Sẵn](./02-Import-VM)
-
-Hướng dẫn import máy ảo EVE-NG/PNETLAB đã được cấu hình sẵn:
-- Download pre-built VM
-- Import vào VMware Workstation
-- Cấu hình Network Adapter
-- Khởi động và kiểm tra
-- Troubleshooting các lỗi thường gặp
-
-**👉 [Xem hướng dẫn đầy đủ](./02-Import-VM/README.md)**
-
----
-
-### 3. 🖼️ [Hướng Dẫn Cài iShare2 - Lấy Image cho EVE/PNETLAB](./03-iShare2-Images)
+### 2. 🖼️ [Hướng Dẫn Cài iShare2 - Lấy Image cho EVE/PNETLAB](./02-iShare2-Images)
 
 Hướng dẫn sử dụng iShare2 để download network device images:
 - Cài đặt và cấu hình iShare2
@@ -75,11 +62,11 @@ Hướng dẫn sử dụng iShare2 để download network device images:
 - Verify và test images
 - Best practices cho quản lý images
 
-**👉 [Xem hướng dẫn đầy đủ](./03-iShare2-Images/README.md)**
+**👉 [Xem hướng dẫn đầy đủ](./02-iShare2-Images/README.md)**
 
 ---
 
-### 4. 🔧 [Hướng Dẫn Xử Lý Lỗi Thường Gặp](./04-Troubleshooting)
+### 3. 🔧 [Hướng Dẫn Xử Lý Lỗi Thường Gặp](./03-Troubleshooting)
 
 Tổng hợp các lỗi phổ biến và cách khắc phục:
 - Lỗi kết nối mạng
@@ -89,7 +76,7 @@ Tổng hợp các lỗi phổ biến và cách khắc phục:
 - Lỗi hiệu năng và tối ưu hóa
 - FAQs
 
-**👉 [Xem hướng dẫn đầy đủ](./04-Troubleshooting/README.md)**
+**👉 [Xem hướng dẫn đầy đủ](./03-Troubleshooting/README.md)**
 
 ---
 
@@ -120,27 +107,6 @@ Tổng hợp các lỗi phổ biến và cách khắc phục:
 ⚠️ **Enable Virtualization**: Đảm bảo VT-x/AMD-V được bật trong BIOS
 
 ⚠️ **Nested Virtualization**: Cần thiết nếu chạy EVE-NG trong VM
-
----
-
-## ⚡ Quick Start
-
-### Người Mới Bắt Đầu
-
-Nếu bạn hoàn toàn mới với EVE-NG/PNETLAB:
-
-1. 📖 Đọc phần [Giới Thiệu](#-giới-thiệu) để hiểu khái niệm cơ bản
-2. 💻 Kiểm tra [Yêu Cầu Hệ Thống](#-yêu-cầu-hệ-thống)
-3. 📦 Làm theo [Hướng Dẫn Cài Đặt](./01-Installation/README.md)
-4. 🖼️ Tải images theo [Hướng Dẫn iShare2](./03-iShare2-Images/README.md)
-
-### Người Có Kinh Nghiệm
-
-Nếu bạn đã quen với virtualization:
-
-1. 💾 Import VM có sẵn theo [Hướng Dẫn Import](./02-Import-VM/README.md)
-2. 🖼️ Setup images với [iShare2](./03-iShare2-Images/README.md)
-3. 🚀 Bắt đầu xây dựng lab của bạn
 
 ### Xử Lý Sự Cố
 
