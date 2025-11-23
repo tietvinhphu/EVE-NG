@@ -53,9 +53,7 @@ File: [VMware-workstation-full-17.6.2-24409262.exe](https://onedrive.live.com/?c
 
 ![EVE-NG Download Page](./images/01-eve-download-page.png)
 
-📦 Sau khi download, bạn sẽ có file ISO, ví dụ:
-
-**eve-ce-prod-6.2.0-4-full.iso**
+📦 Sau khi download, bạn sẽ có file ISO, ví dụ: **eve-ce-prod-6.2.0-4-full.iso**
 
 
 ---
