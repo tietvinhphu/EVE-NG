@@ -286,7 +286,7 @@ Nếu gặp vấn đề trong quá trình cài đặt:
 
 ## 📄 License
 
-Hướng dẫn này được tạo ra cho mục đích giáo dục và chia sẻ kiến thức.
+Hướng dẫn này được tạo ra cho mục đích chia sẻ kiến thức.
 
 ---
 
