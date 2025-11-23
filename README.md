@@ -16,7 +16,6 @@ Repository này cung cấp hướng dẫn chi tiết về cài đặt, cấu hì
 - [Giới Thiệu](#-giới-thiệu)
 - [Hướng Dẫn Chi Tiết](#-hướng-dẫn-chi-tiết)
 - [Yêu Cầu Hệ Thống](#-yêu-cầu-hệ-thống)
-- [Cấu Trúc Repository](#-cấu-trúc-repository)
 - [Quick Start](#-quick-start)
 - [Features](#-features)
 - [Đóng Góp](#-đóng-góp)
@@ -121,47 +120,6 @@ Tổng hợp các lỗi phổ biến và cách khắc phục:
 ⚠️ **Enable Virtualization**: Đảm bảo VT-x/AMD-V được bật trong BIOS
 
 ⚠️ **Nested Virtualization**: Cần thiết nếu chạy EVE-NG trong VM
-
----
-
-## 📁 Cấu Trúc Repository
-
-```
-eve-ng-pnetlab-guide/
-├── README.md                          # File này - Tổng quan
-├── images/                            # Hình ảnh chung cho repository
-│   └── banner.png
-│
-├── 01-Installation/                   # Hướng dẫn cài đặt EVE-NG
-│   ├── README.md
-│   └── images/
-│       ├── 01-download-page.png
-│       ├── 02-vmware-setup.png
-│       └── ...
-│
-├── 02-Import-VM/                      # Hướng dẫn import VM có sẵn
-│   ├── README.md
-│   └── images/
-│       ├── 01-import-wizard.png
-│       ├── 02-network-config.png
-│       └── ...
-│
-├── 03-iShare2-Images/                 # Hướng dẫn iShare2
-│   ├── README.md
-│   └── images/
-│       ├── 01-ishare2-install.png
-│       ├── 02-download-images.png
-│       └── ...
-│
-├── 04-Troubleshooting/                # Hướng dẫn xử lý lỗi
-│   ├── README.md
-│   └── images/
-│       ├── 01-network-error.png
-│       ├── 02-node-error.png
-│       └── ...
-│
-└── LICENSE                            # Giấy phép MIT
-```
 
 ---
 
