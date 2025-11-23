@@ -147,10 +147,13 @@ Sử dụng phím mũi tên (⬆️⬇️⬅️➡️) để di chuyển trong m
 
 ![Confirm Installation](./images/10-confirm-installation.png)
 
+Chờ …
+
+![Confirm Installation](./images/11-confirm-installation.png)
+
+
 #### 4. Chờ Cài Đặt Hoàn Tất
 Máy EVE sẽ tự động khởi động lại sau khi cài đặt xong.
-
-![Installation Progress](./images/11-installation-progress.png)
 
 ### Cấu Hình Lần Đầu
 
@@ -159,6 +162,7 @@ Máy EVE sẽ tự động khởi động lại sau khi cài đặt xong.
 Username: root
 Password: eve
 ```
+EVE sẽ chạy chương trình cấu hình ban đầu. Dùng phím mũi tên (⬆️⬇️⬅️➡️ ) để di chuyển
 
 ![Login Screen](./images/12-login-screen.png)
 
