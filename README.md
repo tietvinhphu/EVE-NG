@@ -191,9 +191,8 @@ Gặp vấn đề? [Tạo Issue](https://github.com/yourusername/eve-ng-pnetlab-
 Có câu hỏi? [Join Discussions](https://github.com/yourusername/eve-ng-pnetlab-guide/discussions)
 
 ### Social Media
-- 📧 Email: your.email@example.com
-- 💼 LinkedIn: [Your Profile](https://linkedin.com/in/yourprofile)
-- 🐦 Twitter: [@yourhandle](https://twitter.com/yourhandle)
+- 📧 Email: [tietvinhphu@gmail.com]
+- 💼 LinkedIn: [Tiet Vinh Phu](https://www.linkedin.com/in/tiet-vinh-phu-609173155/)
 
 ---
 
