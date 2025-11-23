@@ -196,29 +196,12 @@ Có câu hỏi? [Join Discussions](https://github.com/yourusername/eve-ng-pnetla
 
 ---
 
-## 📄 License
-
-Repository này được phát hành dưới [MIT License](./LICENSE).
-
-```
-MIT License
-
-Copyright (c) 2024 Your Name
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction...
-```
-
----
-
 ## 🙏 Credits & Acknowledgments
 
 Cảm ơn đến:
+- **Kai Network** - Vì đã chia sẻ kiến thức
 - **EVE-NG Team** - Vì đã tạo ra nền tảng tuyệt vời này
-- **PNETLAB Team** - Vì những cải tiến đáng giá
 - **Community Contributors** - Vì đã đóng góp và hỗ trợ
-- **Network Engineers Worldwide** - Vì đã chia sẻ kiến thức
 
 ---
 
@@ -238,7 +221,7 @@ Nếu repository này hữu ích cho bạn, đừng quên star ⭐ để ủng h
 
 <div align="center">
 
-**Được tạo với ❤️ bởi Network Engineers, cho Network Engineers**
+**Được tạo với ❤️ bởi Tiết Vinh Phú cho các bạn sinh viên của FPT Jetking**
 
 [⬆ Về đầu trang](#-eve-ng--pnetlab---hướng-dẫn-toàn-diện)
 
