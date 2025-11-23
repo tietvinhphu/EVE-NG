@@ -1,4 +1,4 @@
-![EVE-NG Banner](./images/images/EVE-NG.png)
+![EVE-NG Banner](images/EVE-NG.png)
 
 # HƯỚNG DẪN CÀI ĐẶT EVE-NG
 
