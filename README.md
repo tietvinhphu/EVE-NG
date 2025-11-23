@@ -64,9 +64,12 @@ File: [VMware-workstation-full-17.6.2-24409262.exe](https://onedrive.live.com/?c
 
 1. Mở **VMware Workstation Pro**
 2. Vào **File** > **New Virtual Machine**
-3. Chọn **Typical**, click **Next**
 
 ![VMware New Virtual Machine](./images/02-vmware-new-vm.png)
+
+
+3. Chọn **Typical**, click **Next**
+
 
 ### 3.2. Chọn ISO File
 
