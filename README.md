@@ -164,8 +164,6 @@ Password: eve
 ```
 EVE sẽ chạy chương trình cấu hình ban đầu. Dùng phím mũi tên (⬆️⬇️⬅️➡️ ) để di chuyển
 
-![Login Screen](./images/12-login-screen.png)
-
 #### Đặt Lại Password Root
 ⚠️ **Lưu ý**: Khi gõ password, ký tự sẽ không hiển thị trên màn hình. Gõ bình thường và bấm Enter.
 
