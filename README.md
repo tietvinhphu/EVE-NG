@@ -152,27 +152,6 @@ Gặp vấn đề? Xem [Troubleshooting Guide](./04-Troubleshooting/README.md)
 
 Chúng tôi rất hoan nghênh mọi đóng góp từ cộng đồng!
 
-### Cách Đóng Góp
-
-1. **Fork** repository này
-2. **Clone** về máy của bạn:
-   ```bash
-   git clone https://github.com/yourusername/eve-ng-pnetlab-guide.git
-   ```
-3. **Tạo branch** mới:
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-4. **Commit** các thay đổi:
-   ```bash
-   git commit -m "Add: your feature description"
-   ```
-5. **Push** lên GitHub:
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-6. Tạo **Pull Request**
-
 ### Đóng Góp Có Thể Bao Gồm
 
 - 📝 Cải thiện documentation
@@ -191,36 +170,15 @@ Chúng tôi rất hoan nghênh mọi đóng góp từ cộng đồng!
 
 ---
 
-## 📋 Changelog
-
-### Version 1.0.0 (2024-11-23)
-- ✨ Initial release
-- 📦 EVE-NG Installation Guide
-- 💾 VM Import Guide
-- 🖼️ iShare2 Setup Guide
-- 🔧 Troubleshooting Guide
-
----
-
 ## 🎓 Tài Nguyên Học Tập
 
 ### Official Documentation
 - [EVE-NG Official Docs](https://www.eve-ng.net/index.php/documentation/)
-- [PNETLAB Official Docs](https://pnetlab.com/pages/documentation)
-
-### Video Tutorials
-- [EVE-NG YouTube Channel](https://www.youtube.com/@eve-ng)
-- [NetworkChuck - EVE-NG Tutorial](https://www.youtube.com/watch?v=4xXh1FyJY4o)
 
 ### Community
 - [EVE-NG Forum](https://www.eve-ng.net/index.php/community/)
 - [Reddit r/networking](https://www.reddit.com/r/networking/)
 - [Discord Network Engineers](https://discord.gg/networking)
-
-### Certification Paths
-- [Cisco CCNA](https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/ccna.html)
-- [Juniper JNCIA](https://www.juniper.net/us/en/training/certification/certification-tracks/sp-routing-switching-track.html)
-- [Fortinet NSE](https://training.fortinet.com/)
 
 ---
 
