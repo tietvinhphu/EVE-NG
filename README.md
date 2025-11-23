@@ -129,8 +129,8 @@ Tổng hợp các lỗi phổ biến và cách khắc phục:
 
 Nếu bạn hoàn toàn mới với EVE-NG/PNETLAB:
 
-1. 📖 Đọc phần [Giới Thiệu](#giới-thiệu) để hiểu khái niệm cơ bản
-2. 💻 Kiểm tra [Yêu Cầu Hệ Thống](#yêu-cầu-hệ-thống)
+1. 📖 Đọc phần - [Giới Thiệu](#giới-thiệu) để hiểu khái niệm cơ bản
+2. 💻 Kiểm tra - [Yêu Cầu Hệ Thống](#yêu-cầu-hệ-thống)
 3. 📦 Làm theo [Hướng Dẫn Cài Đặt](./01-Installation/README.md)
 4. 🖼️ Tải images theo [Hướng Dẫn iShare2](./03-iShare2-Images/README.md)
 
