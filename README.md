@@ -67,7 +67,6 @@ File: [VMware-workstation-full-17.6.2-24409262.exe](https://onedrive.live.com/?c
 
 ![VMware New Virtual Machine](./images/02-vmware-new-vm.png)
 
-
 3. Chọn **Typical**, click **Next**
 
 
