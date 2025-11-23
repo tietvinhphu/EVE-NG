@@ -1,6 +1,6 @@
 ![EVE-NG & PNETLAB Banner](01-Installation/images/EVE-NG.png)
 
-# 🌐 EVE-NG & PNETLAB - Hướng Dẫn Toàn Diện
+# 🌐 EVE-NG - Hướng Dẫn Toàn Diện
 
 Repository này cung cấp hướng dẫn chi tiết về cài đặt, cấu hình và xử lý sự cố cho EVE-NG - hai nền tảng mô phỏng mạng phổ biến nhất cho Network Engineers.
 
@@ -221,7 +221,7 @@ Nếu repository này hữu ích cho bạn, đừng quên star ⭐ để ủng h
 
 <div align="center">
 
-**Được tạo với ❤️ bởi Tiết Vinh Phú cho các bạn sinh viên của FPT Jetking**
+**Được tạo bởi Tiết Vinh Phú ❤️ cho các bạn sinh viên của FPT Jetking**
 
 [⬆ Về đầu trang](#-eve-ng--pnetlab---hướng-dẫn-toàn-diện)
 
