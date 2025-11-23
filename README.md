@@ -148,30 +148,6 @@ Gặp vấn đề? Xem [Troubleshooting Guide](./04-Troubleshooting/README.md)
 
 ---
 
-## ✨ Features
-
-### Hướng Dẫn Toàn Diện
-- ✅ Từng bước chi tiết với screenshots
-- ✅ Video tutorials (coming soon)
-- ✅ Các tips & tricks từ kinh nghiệm thực tế
-
-### Đa Nền Tảng
-- ✅ Windows 10/11
-- ✅ macOS
-- ✅ Linux (Ubuntu/CentOS)
-
-### Cập Nhật Thường Xuyên
-- ✅ EVE-NG latest version
-- ✅ PNETLAB updates
-- ✅ New device images
-
-### Cộng Đồng Hỗ Trợ
-- ✅ Issues tracking
-- ✅ Pull requests welcome
-- ✅ Discussions forum
-
----
-
 ## 🤝 Đóng Góp
 
 Chúng tôi rất hoan nghênh mọi đóng góp từ cộng đồng!
