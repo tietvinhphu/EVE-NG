@@ -69,6 +69,8 @@ File: [VMware-workstation-full-17.6.2-24409262.exe](https://onedrive.live.com/?c
 
 3. Chọn **Typical**, click **Next**
 
+![VMware New Virtual Machine-2](./images/03-vmware-new-vm.png)
+
 
 ### 3.2. Chọn ISO File
 
