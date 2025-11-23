@@ -2,7 +2,7 @@
 
 # 🌐 EVE-NG & PNETLAB - Hướng Dẫn Toàn Diện
 
-Repository này cung cấp hướng dẫn chi tiết về cài đặt, cấu hình và xử lý sự cố cho EVE-NG và PNETLAB - hai nền tảng mô phỏng mạng phổ biến nhất cho Network Engineers.
+Repository này cung cấp hướng dẫn chi tiết về cài đặt, cấu hình và xử lý sự cố cho EVE-NG - hai nền tảng mô phỏng mạng phổ biến nhất cho Network Engineers.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub stars](https://img.shields.io/github/stars/yourusername/eve-ng-guide.svg)](https://github.com/yourusername/eve-ng-guide/stargazers)
