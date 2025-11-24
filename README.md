@@ -110,7 +110,7 @@ Tổng hợp các lỗi phổ biến và cách khắc phục:
 
 ### Xử Lý Sự Cố
 
-Gặp vấn đề? Xem [Troubleshooting Guide](./04-Troubleshooting/README.md)
+Gặp vấn đề? Xem [Troubleshooting Guide](./03-Troubleshooting/README.md)
 
 ---
 
