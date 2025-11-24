@@ -294,4 +294,7 @@ Hướng dẫn này được tạo ra cho mục đích chia sẻ kiến thức.
 
 ---
 
+<div align="center">
 [↑ Về đầu trang](#hướng-dẫn-cài-đặt-eve-ng)
+
+</div>

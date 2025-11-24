@@ -398,4 +398,8 @@ Hướng dẫn này được tạo ra cho mục đích chia sẻ kiến thức v
 
 ---
 
+<div align="center">
+
 [↑ Về đầu trang](#hướng-dẫn-cài-đặt-ishare2-cho-eve-ngpnetlab)
+
+</div>
