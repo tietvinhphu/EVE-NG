@@ -23,7 +23,7 @@ EVE-NG (Emulated Virtual Environment - Next Generation) là nền tảng mô ph�
 
 ### Phần mềm cần thiết:
 - VMWare Workstation Pro 17.x trở lên
-- Trình duyệt web hiện đại (Chrome, Firefox, Edge)
+- Trình duyệt web (Chrome, Firefox, Edge)
 
 ---
 
