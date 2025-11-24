@@ -71,12 +71,10 @@ Hướng dẫn sử dụng iShare2 để download network device images:
 ### 3. 🔧 [Hướng Dẫn Xử Lý Lỗi Thường Gặp](./03-Troubleshooting)
 
 Tổng hợp các lỗi phổ biến và cách khắc phục:
-- Lỗi kết nối mạng
-- Lỗi không khởi động được node
-- Lỗi Console không hoạt động
-- Lỗi import/export lab
-- Lỗi hiệu năng và tối ưu hóa
-- FAQs
+- Lỗi Fix Permissions
+- Lỗi image QEMU tự động stop
+- Lỗi "VIRTUALIZED INTEL VT-X/EPT NOT SUPPORTED" => Lỗi đau đớn nhất của mình 🥺
+- Lỗi Connection Abandoned khi dùng Wireshark
 
 **👉 [Xem hướng dẫn đầy đủ](./03-Troubleshooting/README.md)**
 
