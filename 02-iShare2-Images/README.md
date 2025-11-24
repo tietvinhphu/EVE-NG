@@ -1,14 +1,21 @@
 ![EVE-NG Banner](https://github.com/user-attachments/assets/139141be-596a-417c-9eb6-885af59cd78c)
 
-# Hướng dẫn cài ishare2 để lấy image cho EVE/PNETLAB
+# HƯỚNG DẪN CÀI ĐẶT ISHARE2 CHO EVE-NG/PNETLAB
 
-Các bạn khi làm lab ảo với EVE dễ gặp vấn đề về TÌM và CÀI ĐẶT image cho thiết bị lên EVE. Để hỗ trợ điều này, có công cụ tên là **ishare2**, đó như một kho image, các bạn chỉ cần gõ lệnh là có thể tìm và cài đặt image mong muốn.
+**ishare2** là công cụ CLI mạnh mẽ giúp tìm kiếm và tải image cho các thiết bị mạng trong EVE-NG/PNETLAB một cách nhanh chóng và dễ dàng. Thay vì phải tìm kiếm và upload image thủ công, bạn chỉ cần gõ lệnh để tải về từ kho lưu trữ tập trung.
 
-Hướng dẫn này có thể áp dụng cho cả PNETLAB
+📌 **Github Repository:** [ishare2-org/ishare2-cli](https://github.com/ishare2-org/ishare2-cli)
 
-Github của **ishare2** : [https://github.com/ishare2-org/ishare2-cli](https://github.com/ishare2-org/ishare2-cli)
+## 📋 Mục Lục
+- [Chuẩn Bị Hệ Thống](#1-chuẩn-bị-hệ-thống-prerequisites)
+- [Cài Đặt ishare2](#2-cài-đặt-ishare2-phương-pháp-github)
+- [Quy Trình Tải Image](#3-quy-trình-tải-image-chuẩn-sop)
+- [Xử Lý License Cisco IOL](#4-xử-lý-lỗi-license-cisco-iol-python-3-fix)
+- [Danh Sách Image Khuyến Nghị](#5-danh-sách-image-khuyến-nghị-best-practices)
+- [Quản Lý Và Tối Ưu Hóa](#6-quản-lý-và-tối-ưu-hóa-tài-nguyên)
+- [Hỗ Trợ](#-hỗ-trợ)
 
-**Mục lục :**
+---
 
 ## 1. CHUẨN BỊ HỆ THỐNG (PREREQUISITES)
 
@@ -37,13 +44,15 @@ ping -c 4 google.com
 
 ## 2. CÀI ĐẶT ISHARE2 (PHƯƠNG PHÁP GITHUB)
 
+### 2.1. Kết Nối SSH
+
 SSH vào giao diện CLI của EVE (hoặc dùng luôn giao diện CLI trên máy ảo, nhưng SSH dễ làm hơn)
 
 ![image.png](https://github.com/user-attachments/assets/e8a04ac2-d869-4b95-a2c4-a472e027631a)
 
-Do server trang chủ thường xuyên gián đoạn, sử dụng mã nguồn trực tiếp từ GitHub để đảm bảo tính ổn định.
+⚠️ **Lưu ý:** Do server trang chủ thường xuyên gián đoạn, sử dụng mã nguồn trực tiếp từ GitHub để đảm bảo tính ổn định.
 
-**Lệnh cài đặt:**
+### 2.2. Chạy Lệnh Cài Đặt
 
 ```bash
 wget -O /usr/sbin/ishare2 https://raw.githubusercontent.com/ishare2-org/ishare2-cli/main/ishare2 && chmod +x /usr/sbin/ishare2
@@ -51,11 +60,13 @@ wget -O /usr/sbin/ishare2 https://raw.githubusercontent.com/ishare2-org/ishare2-
 
 ![image.png](https://github.com/user-attachments/assets/f453c973-3d4c-4477-bbc4-b541a695e077)
 
-Đoạn script sẽ tự động cài cái package cần thiết, sau đó cài **ishare2** vào EVE
+Đoạn script sẽ tự động cài các package cần thiết, sau đó cài **ishare2** vào EVE.
 
 ![image.png](https://github.com/user-attachments/assets/9c8e79cf-c660-48d6-a234-645869114f1d)
 
-Cấu hình cho **ishare2** :
+### 2.3. Cấu Hình ishare2
+
+Trong quá trình cài đặt, hệ thống sẽ hỏi các câu hỏi cấu hình:
 
 ```bash
 [+] Use aria2c for faster downloads? (default: no)
@@ -87,10 +98,17 @@ Nếu nó đứng chỗ này thì bấm **ENTER**
 [*] Enter the number of the mirror you want to use (default: 1): **enter**
 ```
 
-Thông báo cài đặt **ishare2** hoàn tất
+Thông báo cài đặt **ishare2** hoàn tất.
 
-**Kiểm tra:**
-Gõ lệnh `ishare2`. Nếu hiển thị menu Help là cài đặt thành công.
+### 2.4. Kiểm Tra Cài Đặt
+
+Gõ lệnh `ishare2` để kiểm tra:
+
+```bash
+ishare2
+```
+
+✅ **Thành công:** Nếu hiển thị menu Help như hình dưới đây là cài đặt thành công.
 
 ![image.png](https://github.com/user-attachments/assets/1e2f0e16-bcbc-42f7-8e47-b327e2c5b730)
 
@@ -98,9 +116,9 @@ Gõ lệnh `ishare2`. Nếu hiển thị menu Help là cài đặt thành công.
 
 ## 3. QUY TRÌNH TẢI IMAGE CHUẨN (SOP)
 
-Quy trình bắt buộc gồm 3 bước: **Search -> Pull -> Fix Permissions**.
+Quy trình tải image chuẩn gồm 3 bước: **Search → Pull → Fix Permissions**
 
-### Bước 1: Tìm kiếm (Search)
+### 3.1. Bước 1: Tìm Kiếm (Search)
 
 Tìm tên hoặc ID của thiết bị trong kho lưu trữ.
 
@@ -108,68 +126,71 @@ Tìm tên hoặc ID của thiết bị trong kho lưu trữ.
 ishare2 search <type> [keyword]
 ```
 
-Trong đó **type** có thể là :
+**Các loại type:**
+- `qemu` - Máy ảo QEMU (Router, Firewall, Windows...)
+- `iol` - Cisco IOL (Router L3, Switch L2)
+- `dynamips` - Cisco Dynamips (Router cũ)
 
-- qemu
-- iol
-- dynamips
+**Keyword:** Tùy chọn, có thể bỏ qua để liệt kê tất cả.
 
-Keyword có thể có hoặc không
+#### 📝 Ví Dụ 1: Tìm Switch IOL
 
-Ví dụ bạn muốn tìm image của switch, nằm trong nhóm iol, mà bạn không nhớ rõ tên : 
-
-Gõ lệnh : 
+Bạn muốn tìm image của switch, nằm trong nhóm IOL, nhưng không nhớ rõ tên: 
 
 ```bash
 ishare2 search iol
 ```
 
-**ishare2** sẽ tìm và liệt kê tất cả image iol cho bạn
+**ishare2** sẽ tìm và liệt kê tất cả image IOL cho bạn:
 
 ![image.png](https://github.com/user-attachments/assets/03064284-5860-4641-847f-0dde390f1b1b)
 
-Ví dụ 2, tìm image của firewall Fortinet FGT, mà bạn không biết nằm trong nhóm nào
+#### 📝 Ví Dụ 2: Tìm Fortinet Firewall
+
+Bạn muốn tìm image của firewall Fortinet FGT, nhưng không biết nằm trong nhóm nào:
 
 ```bash
  ishare2 search FGT
 ```
 
-ishare2 sẽ tìm trong tất cả các type và liệt kê cho bạn. Lúc này bạn cũng sẽ biết được Fortigate FGT nằm trong nhóm QEMU
+**ishare2** sẽ tìm trong tất cả các type và liệt kê cho bạn. Bạn sẽ biết được Fortigate FGT nằm trong nhóm **QEMU**:
 
 ![image.png](https://github.com/user-attachments/assets/2c0fa8be-7906-479b-a91b-8647b59bb17e)
 
-### Bước 2: Tải về (Pull)
+### 3.2. Bước 2: Tải Về (Pull)
 
-Sau khi tìm image ở bước trước, bạn hãy lưu lại : 
+Sau khi tìm được image, hãy ghi nhớ:
 
-- **Type** của image : là **qemu**, hay **iol**, hay **dynamips**
-- **ID** của image (là con số ở cột đầu tiên)
+- **Type** của image: `qemu`, `iol`, hoặc `dynamips`
+- **ID** của image (con số ở cột đầu tiên)
 
-Lệnh cài đặt một image : 
+**Cú pháp lệnh:**
 
 ```bash
 ishare2 pull <type> <id>
 ```
 
-Ví dụ mình tìm image của **Cisco Router IOL L3**. Mình sẽ biết được L3 thuộc nhóm **IOL**, và mình chọn image ID số 3**. L3-ADVENTERPRISEK9-M-15.4-2T.bin** 
+#### 📝 Ví Dụ: Tải Cisco Router IOL L3
+
+Bạn muốn tải image **Cisco Router IOL L3**. Từ kết quả tìm kiếm, bạn biết:
+- Type: **IOL**
+- ID: **3** (L3-ADVENTERPRISEK9-M-15.4-2T.bin) 
 
 ![image.png](https://github.com/user-attachments/assets/f678be53-c5c8-4134-afe1-751cdad15aaa)
 
-Mình sẽ cài đặt bằng lệnh : 
+Chạy lệnh:
 
 ```bash
 ishare2 pull iol 3
 ```
 
-Thông báo như bên dưới là hoàn tất, bạn có thể sử dụng luôn image mà KHÔNG CẦN phải fix permission. 
+✅ Thông báo như bên dưới là hoàn tất. Image đã được tải về và có thể sử dụng:
 
 ![image.png](https://github.com/user-attachments/assets/47b600e3-2e18-49aa-bf68-59314a754cc8)
 
-Tuy nhiên, bạn vẫn phải :
+⚠️ **Lưu ý:** Đối với image **IOL**, bạn cần tạo file license (xem [Phần 4](#4-xử-lý-lỗi-license-cisco-iol-python-3-fix))
 
-- Tạo file license cho image **iol ⇒ Phần 4**
-
-### Bước 3: Sửa quyền hệ thống (Fix Permissions)
+### 3.3. Bước 3: Sửa Quyền Hệ Thống (Fix Permissions)
 
 Thông thường khi pull image về hệ thống sẽ tự động **Fix Permissions** như bước ở trên. Nếu vì một lý do gì mà bị lỗi thì nên chạy lệnh này sau mỗi lần tải để EVE-NG nhận diện và khởi động được thiết bị.
 
@@ -181,35 +202,39 @@ Thông thường khi pull image về hệ thống sẽ tự động **Fix Permis
 
 ## 4. XỬ LÝ LỖI LICENSE CISCO IOL (PYTHON 3 FIX)
 
-Nếu bạn dùng image iol (ví dụ như switch), bạn cần file license thì mới chạy được. Nếu không có file license, thì khi start thiết bị, EVE sẽ báo “cannot start the device”, trong log báo không có license.
+### 4.1. Giới Thiệu Vấn Đề
 
-Trên các bản EVE-NG mới, Python 2 đã bị loại bỏ khiến tính năng `ishare2 relicense` tự động bị lỗi. Cần tạo License thủ công bằng Script Python 3.
+⚠️ **Vấn đề:** Image IOL (Router L3, Switch L2) yêu cầu file license để chạy. Không có license sẽ gặp lỗi:
+- EVE báo: **"Cannot start the device"**
+- Log hiển thị: **"No license found"**
 
-### Bước 1: Cài python
+Trên các bản EVE-NG mới, Python 2 đã bị loại bỏ khiến lệnh `ishare2 relicense` không hoạt động. Do đó, cần tạo license thủ công bằng Python 3.
 
-Chạy lệnh sau
+### 4.2. Bước 1: Cài Đặt Python
+
+Cài đặt Python 3:
 
 ```bash
 apt install -y python-is-python3
 ```
 
-### Bước 2. Tạo file License iourc cho image iol thủ công
+### 4.3. Bước 2: Tạo File License Generator
 
-Tạo file có tên **keygen.py**
+#### 2.1. Tạo File keygen.py
 
 ```bash
 touch keygen.py
 ```
 
-Mở file 
+#### 2.2. Chỉnh Sửa File
+
+Mở file bằng vi editor:
 
 ```bash
 vi keygen.py
 ```
 
-Bấm phím **i** để edit
-
-Copy and Paste nội dung bên dưới vào file **keygen.py** (paste bằng cách click chuột phải) : 
+Bấm phím **i** để vào chế độ Insert, sau đó paste nội dung sau (click chuột phải để paste): 
 
 ```bash
 #! /usr/bin/python
@@ -241,50 +266,56 @@ print("You can disable the phone home feature with something like:")
 print(" echo '127.0.0.127 xml.cisco.com' >> /etc/hosts\n")
 ```
 
-Lưu và thoát bằng cách :
+**Lưu file:**
+1. Bấm **ESC**
+2. Gõ **:wq!**
+3. Bấm **Enter**
 
-- Bấm **ESC**
-- Gõ **wq!**
-- **Enter**
+### 4.4. Bước 3: Tạo License
 
-Chạy file code : 
+Chạy script để tạo license:
 
 ```bash
 python3 keygen.py
 ```
 
-Copy phần license (tô sáng):
+**Kết quả:** Script sẽ hiển thị thông tin license. Copy phần được tô sáng như hình:
 
 ![image.png](https://github.com/user-attachments/assets/270f5c10-22a6-4a22-99dc-7596ff4d5925)
 
-Tạo file **iourc** và dán phần đó vào
+### 4.5. Bước 4: Tạo File iourc
+
+Tạo và chỉnh sửa file **iourc**:
 
 ```bash
 touch iourc
 vi iourc
 ```
 
-Bấm **i** để edit, và dán license vào, nội dung file **iourc** trông như sau
+Bấm **i** để vào chế độ Insert, sau đó paste license đã copy ở bước trước. Nội dung file **iourc** sẽ trông như sau:
 
 ![image.png](https://github.com/user-attachments/assets/c818149d-63f7-4815-bd1b-98c24dbca052)
 
-Lưu và thoát bằng cách :
+**Lưu file:**
+1. Bấm **ESC**
+2. Gõ **:wq!**
+3. Bấm **Enter**
 
-- Bấm **ESC**
-- Gõ **wq!**
-- **Enter**
+### 4.6. Bước 5: Áp Dụng License
 
-Copy file license vào thư mục chứa image **iol**
+Copy file license vào thư mục chứa image IOL:
 
 ```bash
 cp iourc /opt/unetlab/addons/iol/bin/
 ```
 
+✅ **Hoàn tất!** Bây giờ các thiết bị IOL đã có thể khởi động bình thường.
+
 ---
 
 ## 5. DANH SÁCH IMAGE KHUYẾN NGHỊ (BEST PRACTICES)
 
-Để đảm bảo Lab chạy mượt, ít tốn tài nguyên, khuyến nghị sử dụng các phiên bản sau:
+🎯 Để đảm bảo Lab chạy mượt, ít tốn tài nguyên, khuyến nghị sử dụng các phiên bản sau:
 
 | **Loại thiết bị** | **Phiên bản khuyến nghị (ID/Tên)** | **Lý do chọn** |
 | --- | --- | --- |
@@ -298,7 +329,7 @@ cp iourc /opt/unetlab/addons/iol/bin/
 
 ## 6. QUẢN LÝ VÀ TỐI ƯU HÓA TÀI NGUYÊN
 
-### 6.1. Xóa Image cũ (Giải phóng ổ cứng)
+### 6.1. 🗑️ Xóa Image Cũ (Giải Phóng Ổ Cứng)
 
 Ví dụ xóa các file Dynamips c7200 cũ:
 
@@ -306,20 +337,61 @@ Ví dụ xóa các file Dynamips c7200 cũ:
 rm -rf /opt/unetlab/addons/dynamips/c7200*
 ```
 
-### 6.2. Cấu hình Node Windows trên Web EVE
+### 6.2. ⚙️ Cấu Hình Node Windows Trên Web EVE
 
 Để Windows chạy mượt mà, khi Add Node cần cấu hình tối thiểu:
 
-- **CPU:** 2 vCPU.
-- **RAM:** 4096 MB (4GB).
-- **Lưu ý:** Bật "Virtualize Intel VT-x/EPT" trong cài đặt VMware của máy ảo EVE-NG.
+- **CPU:** 2 vCPU
+- **RAM:** 4096 MB (4GB)
+- **Lưu ý:** Bật **"Virtualize Intel VT-x/EPT"** trong cài đặt VMware của máy ảo EVE-NG
 
-### 6.3. Xử lý Image ngôn ngữ Trung Quốc
+### 6.3. 🌐 Xử Lý Image Ngôn Ngữ Trung Quốc
 
 Nếu lỡ tải các bản Windows repack tiếng Trung:
 
-1. Vào Settings -> Time & Language -> Language.
-2. Add language -> Tìm "English (United States)".
-3. Move "English" lên đầu danh sách (Top priority).
-4. Sign out và đăng nhập lại.
-*(Khuyến nghị: Nên tải lại bản ID 1722 tiếng Anh chuẩn để tránh lỗi font/tool).*
+1. Vào **Settings** → **Time & Language** → **Language**
+2. Add language → Tìm **"English (United States)"**
+3. Move **"English"** lên đầu danh sách (Top priority)
+4. Sign out và đăng nhập lại
+
+💡 **Khuyến nghị:** Nên tải lại bản ID 1722 tiếng Anh chuẩn để tránh lỗi font/tool.
+
+---
+
+## 📞 Hỗ Trợ
+
+Nếu gặp vấn đề trong quá trình sử dụng ishare2:
+
+### Các vấn đề thường gặp:
+- **Không tải được image:** Kiểm tra kết nối Internet và DNS
+- **Image không khởi động:** Chạy lệnh Fix Permissions
+- **IOL báo lỗi license:** Thực hiện lại [Phần 4](#4-xử-lý-lỗi-license-cisco-iol-python-3-fix)
+- **Hết dung lượng ổ cứng:** Xóa các image không dùng đến
+
+### Tài nguyên tham khảo:
+1. [ishare2 GitHub Repository](https://github.com/ishare2-org/ishare2-cli)
+2. [EVE-NG Community Forum](https://www.eve-ng.net/index.php/community/)
+3. [EVE-NG Documentation](https://www.eve-ng.net/index.php/documentation/)
+
+### Báo lỗi:
+- Tạo issue trên repository này
+- Cung cấp thông tin chi tiết về lỗi gặp phải
+- Đính kèm screenshot nếu có thể
+
+---
+
+## 📄 License
+
+Hướng dẫn này được tạo ra cho mục đích chia sẻ kiến thức và hỗ trợ cộng đồng.
+
+---
+
+## 📚 Tài Nguyên Liên Quan
+
+- [Hướng Dẫn Cài Đặt EVE-NG](../01-Installation/README.md)
+- [EVE-NG Official Website](https://www.eve-ng.net/)
+- [ishare2 CLI Tool](https://github.com/ishare2-org/ishare2-cli)
+
+---
+
+**⭐ Nếu hướng dẫn này hữu ích, đừng quên star repo này!**
