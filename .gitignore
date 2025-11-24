@@ -4,3 +4,5 @@
 # Ignore all images folders (if you have images in other directories too)
 **/images/
 
+# Ignore Claude Code configuration
+.claude/

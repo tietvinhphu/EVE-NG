@@ -1,4 +1,4 @@
-![EVE-NG & PNETLAB Banner](01-Installation/images/EVE-NG.png)
+![EVE-NG & PNETLAB Banner](https://github.com/user-attachments/assets/139141be-596a-417c-9eb6-885af59cd78c)
 
 # 🌐 EVE-NG - Hướng Dẫn Toàn Diện
 
