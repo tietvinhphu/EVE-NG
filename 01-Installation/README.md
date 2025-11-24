@@ -32,7 +32,7 @@ EVE-NG (Emulated Virtual Environment - Next Generation) là nền tảng mô ph�
 Tải và cài đặt VMWare Workstation Pro:
 
 
-File: [VMware-workstation-full-17.6.2-24409262.exe](https://onedrive.live.com/?cid=7f63085b39ff249e&id=7F63085B39FF249E!s14a29532141347a6b84a412917920241&resid=7F63085B39FF249E!s14a29532141347a6b84a412917920241&e=K4SM57&migratedtospo=true&redeem=aHR0cHM6Ly8xZHJ2Lm1zL3UvYy83ZjYzMDg1YjM5ZmYyNDllL0VUS1ZvaFFURktaSHVFcEJLUmVTQWtFQkVFdDUwVTB4NTRuUC1WTl9jNTltU3c_ZT1LNFNNNTc)
+File: [VMware-Workstation-Full-25H2-24995812.exe](https://1drv.ms/u/c/4927f31a428ad9cd/IQCIEAWxRplpSL0FpyWfZAV-AY_WaVBwS3TdZAfPL54tjUA?e=lyL1dO)
 
 
 **Các bước cài đặt:**
