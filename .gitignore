@@ -1,0 +1,6 @@
+# Ignore images folder in 01-Installation
+01-Installation/images/
+
+# Ignore all images folders (if you have images in other directories too)
+**/images/
+
