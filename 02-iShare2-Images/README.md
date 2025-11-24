@@ -98,8 +98,6 @@ Nếu nó đứng chỗ này thì bấm **ENTER**
 [*] Enter the number of the mirror you want to use (default: 1): **enter**
 ```
 
-Thông báo cài đặt **ishare2** hoàn tất.
-
 ### 2.4. Kiểm Tra Cài Đặt
 
 Gõ lệnh `ishare2` để kiểm tra:
