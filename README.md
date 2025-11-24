@@ -56,11 +56,13 @@ Hướng dẫn từng bước cài đặt EVE-NG từ đầu:
 ### 2. 🖼️ [Hướng Dẫn Cài iShare2 - Lấy Image cho EVE/PNETLAB](./02-iShare2-Images)
 
 Hướng dẫn sử dụng iShare2 để download network device images:
+- Chuẩn bị hệ thống
 - Cài đặt và cấu hình iShare2
 - Download images cho Cisco, Juniper, Fortinet, v.v.
-- Upload images lên EVE-NG/PNETLAB
-- Verify và test images
-- Best practices cho quản lý images
+- Sửa quyền hệ thống (Fix Permissions)
+- Xử lý lỗi License Cisco IOL
+- Danh sách images khuyến nghị
+- Quản lý và tối ưu hoá tài nguyên
 
 **👉 [Xem hướng dẫn đầy đủ](./02-iShare2-Images/README.md)**
 

@@ -1,6 +1,9 @@
 # Ignore images folder in 01-Installation
 01-Installation/images/
 
+# Ignore images folder in 02-iShare2-Images
+02-iShare2-Images/images/
+
 # Ignore all images folders (if you have images in other directories too)
 **/images/
 
