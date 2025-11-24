@@ -132,7 +132,7 @@ Lỗi này xảy ra do **Hyper-V** của Windows đang xung đột với VMware.
 
 **Cách 2:** Nếu tool trên không hoạt động
 
-1. Tải file: [DisableVBS.rar](https://1drv.ms/u/c/4927f31a428ad9cd/IQCjXYWEidY1S4Cc3_w4dL0fASztpk8z5xF8TFNclch5rwE?e=LuhGnj)
+1. Tải file: [DisableVBS.rar](https://1drv.ms/u/c/4927f31a428ad9cd/IQCjXYWEidY1S4Cc3_w4dL0fASztpk8z5xF8TFNclch5rwE?e=LuhGnj&download=1)
 2. Giải nén và chạy với quyền **Administrator**
 3. Khởi động lại máy
 4. Nhấn **F3** vài lần khi có câu hỏi
