@@ -1,8 +1,6 @@
+![EVE-NG Banner](https://github.com/user-attachments/assets/139141be-596a-417c-9eb6-885af59cd78c)
+
 # Hướng dẫn cài ishare2 để lấy image cho EVE/PNETLAB
-
----
-
-HƯỚNG DẪN CÀI **ISHARE2** ĐỂ LẤY IMAGE CHO EVE
 
 Các bạn khi làm lab ảo với EVE dễ gặp vấn đề về TÌM và CÀI ĐẶT image cho thiết bị lên EVE. Để hỗ trợ điều này, có công cụ tên là **ishare2**, đó như một kho image, các bạn chỉ cần gõ lệnh là có thể tìm và cài đặt image mong muốn.
 
